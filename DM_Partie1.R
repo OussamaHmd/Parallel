@@ -1,7 +1,7 @@
 simu_u_v_D1 = function(){
   u = runif(1)# u suit une loi uniforme
   x = 1 - sqrt(1 - u) # pour simuler la variable x
-  #(si on calcule la fct de rep marginalemarginale, on inverse la fct de répartion pour simuler le u)
+  #(si on calcule la fct de rep marginalemarginale, on inverse la fct de rÃ©partion pour simuler le u)
   y = runif(1,0,1-x) # c est notre v 
   return(c(x,y))
 }
